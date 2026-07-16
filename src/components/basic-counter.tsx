@@ -34,9 +34,9 @@ function Counter() {
                     <img key={index} src={imgage} width="100em"/>
                 )}
                 {count == 5 && <div>
-                    <h3>
-                        Stop looking at NASA and go home
-                    </h3>
+                        <h3>
+                            Stop looking at NASA and go home
+                        </h3>
                     </div>
                 }
             </div>

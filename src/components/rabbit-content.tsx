@@ -13,7 +13,8 @@ const Image = styled.img`
 
 const RabbitContent = () => {
     return (
-        <Image src={rabbitImage}/>
+        <Image src={rabbitImage}
+        />
       )
 }
 

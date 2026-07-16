@@ -5,11 +5,12 @@ import {FIRST_NASA_PARAGRAPH, SECOND_NASA_PARAGRAPH, NASA_IMAGE} from './assets/
 function App() {
   return (
     <>  
-    <Counter></Counter>
+    <Counter/>
     <BasicContent titleContent='NASA'
                   firstParagraphContent={FIRST_NASA_PARAGRAPH}
                   secondParagraphContent={SECOND_NASA_PARAGRAPH}
-                  imagePath={NASA_IMAGE}/>
+                  imagePath={NASA_IMAGE}
+                  />
     </>
   )
 }
