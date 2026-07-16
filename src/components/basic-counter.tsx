@@ -33,9 +33,12 @@ function Counter() {
                 {images.slice(0, count).map((imgage, index) =>
                     <img key={index} src={imgage} width="100em"/>
                 )}
-                <h3>
-                    Stop looking at NASA and go home
-                </h3>
+                {count == 5 && <div>
+                    <h3>
+                        Stop looking at NASA and go home
+                    </h3>
+                    </div>
+                }
             </div>
         </div>
     );
