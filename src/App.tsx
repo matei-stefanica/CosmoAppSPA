@@ -1,5 +1,5 @@
 import BasicContent from './components/basic-content'
-import Counter from './components/basic-button'
+import Counter from './components/basic-counter'
 import {FIRST_NASA_PARAGRAPH, SECOND_NASA_PARAGRAPH, NASA_IMAGE} from './assets/nasa-content'
 
 function App() {
