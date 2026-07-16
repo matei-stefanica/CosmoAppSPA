@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react';
 import { setItem, getItem } from '../utils.tsx';
 
-function Counter() {
+
+const Counter = () => {
     const [count, setCount] = useState(() => {
         return getItem('count') || 0;
     });

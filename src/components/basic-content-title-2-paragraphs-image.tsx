@@ -1,31 +1,41 @@
 import React, {useState} from 'react';
 import styled from 'styled-components';
-import BasicContentProps from './content-interfaces'
+
+interface BasicContentProps {
+    firstParagraphContent: string;
+    secondParagraphContent: string;
+    imagePath: string;
+    titleContent: string
+}
+
+const paddingBottom = "1.5em"
+const paddingTop = "0.5em"
+const paddingLeft = "4em"
+const paddingRight = "4em"
+const imageWidth = "5em"
 
 const Title = styled.h1`
   font-size: 4em;
   text-align: center;
   color: #dddddd;
-  padding-bottom: 1.5em;
-  padding-top: 1em;
+  padding-bottom: ${paddingBottom};
+  padding-top: ${paddingTop};
 `;
 
 const Paragraph = styled.p`
-  font-size: 1emm;
-  text-align justify;
+  text-align: justify;
   color: #f0b5b5;
-  padding-left: 10em;
-  padding-right: 10em;
-  padding-bottom:2em;
+  padding-left: ${paddingLeft};
+  padding-right: ${paddingRight};
+  padding-bottom: ${paddingBottom};
 `;
 
 const Image = styled.img`
   width: 50em;
-  height: auto;
-  padding-top: 1.5em;
+  padding-top: ${paddingTop};
 `;
 
-const BasicContent : React.FC<BasicContentProps> = ({titleContent, firstParagraphContent, secondParagraphContent, imagePath}) => {
+const BasicContentTitle2ParagrqaphsImage : React.FC<BasicContentProps> = ({titleContent, firstParagraphContent, secondParagraphContent, imagePath}) => {
     return (
         <>
           <section id="title-area">
@@ -43,4 +53,4 @@ const BasicContent : React.FC<BasicContentProps> = ({titleContent, firstParagrap
       )
 }
 
-export default BasicContent
+export default BasicContentTitle2ParagrqaphsImage
