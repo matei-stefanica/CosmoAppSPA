@@ -25,12 +25,12 @@ const Image = styled.img`
   padding-top: 1.5em;
 `;
 
-const BasicContent : React.FC<BasicContentProps> = ({firstParagraphContent, secondParagraphContent, imagePath}) => {
+const BasicContent : React.FC<BasicContentProps> = ({titleContent, firstParagraphContent, secondParagraphContent, imagePath}) => {
     return (
         <>
           <section id="title-area">
             <div id="title">
-            <Title>NASA</Title>
+            <Title>{titleContent}</Title>
             </div>
           </section>
 

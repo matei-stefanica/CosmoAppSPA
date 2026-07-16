@@ -7,7 +7,8 @@ function App() {
   return (
     <>  
     <Counter></Counter>
-    <BasicContent firstParagraphContent={FIRST_NASA_PARAGRAPH}
+    <BasicContent titleContent='NASA'
+                  firstParagraphContent={FIRST_NASA_PARAGRAPH}
                   secondParagraphContent={SECOND_NASA_PARAGRAPH}
                   imagePath={NASA_IMAGE}/>
 
