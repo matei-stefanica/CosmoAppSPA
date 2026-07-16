@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import styled from 'styled-components';
-import BasicContentProps from './content-interfaces'
+import BasicContentProps from '../interfaces/basic-content-interface'
 
 const Title = styled.h1`
   font-size: 4em;
